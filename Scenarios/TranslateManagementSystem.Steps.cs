@@ -1,5 +1,10 @@
 ﻿using LightBDD.MsTest2;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System.Reflection;
+using System.Threading;
+using Translate_Management_System_Test.Pages;
 
 namespace Translate_Management_System_Test
 {
