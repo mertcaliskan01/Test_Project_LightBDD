@@ -62,7 +62,7 @@ namespace Translate_Management_System_Test.Pages
             }
             else if (error_message == "These credentials do not match our records.")
             {
-                Console.WriteLine("Wrong password");
+                Console.WriteLine("These credentials do not match our records.");
             }
         }
 

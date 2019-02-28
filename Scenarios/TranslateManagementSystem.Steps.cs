@@ -22,12 +22,12 @@ namespace Translate_Management_System_Test
             loginPage = new Login_Page(driver);
         }
 
-        public void the_user_write_userInformation_and_click_login(string email, string Password)
+        public void the_user_write_user_information_and_click_login(string email, string Password)
         {
             loginPage.PerformLogin(email, Password);
         }
 
-        public void user_see_the_login_page_fully_loaded_and_return_message()
+        public void user_see_the_login_page_fully_loaded_and_return_confirmation_message()
         {
             loginPage.user_see_the_login_page_fully_loaded();
         }
@@ -37,7 +37,7 @@ namespace Translate_Management_System_Test
             loginPage.Succesful_Login_Control();
         }
 
-        public void view_error_message()
+        public void an_invalid_login_or_password_error_message_should_be_returned()
         {
             loginPage.Unsuccesful_Login_Control();
         }
@@ -89,7 +89,7 @@ namespace Translate_Management_System_Test
             web_Front_End_Page.Approve_or_Disaprove("No", "Disapprove");
         }
 
-        public void the_word_written_by_the_user_should_not_be_changed(string search_word, string writed_word)
+        public void the_word_written_by_the_user_should_not_change(string search_word, string writed_word)
         {
             Thread.Sleep(1000);
             web_Front_End_Page.Search("Welcome", "edited");
